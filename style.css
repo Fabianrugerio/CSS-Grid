@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  background-color: gray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px auto 250px;
+  grid-template-rows: 100px auto 100px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+  background-color: blueviolet;
+}
+
+.item {
+  background-color: beige;
+}
