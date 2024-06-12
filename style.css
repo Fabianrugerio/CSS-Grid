@@ -11,8 +11,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 100px auto 250px;
-  grid-template-rows: 100px auto 100px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6,1fr);
   width: 500px;
   height: 500px;
   margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
