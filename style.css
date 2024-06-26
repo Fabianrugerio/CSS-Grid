@@ -7,6 +7,7 @@
 body {
   padding: 24px;
   background-color: gray;
+  font-size: 30px;
 }
 
 .container {
@@ -18,9 +19,15 @@ body {
     "main   main   sidebar"
     "footer footer footer";
 
-    gap: 24px; /* define el espacio entre filas y columnas, pero no con los bordes */
-    row-gap: 18px; /* define el espacio entre las filas */
-    column-gap: 18px; /* define el espacio entre las columnas */
+  gap: 24px; /* define el espacio entre filas y columnas, pero no con los bordes */
+  /* row-gap: 18px; */ /* define el espacio entre las filas */
+  /* column-gap: 18px; */ /* define el espacio entre las columnas */
+  
+  grid-auto-flow: row; /* valor por default */
+  grid-auto-flow: dense; /* este casi no se usa */
+  grid-auto-flow: row;
+  
+  direction: rtl; /* esta propiedad permite cambiar la direccion del flujo de grid, pero no pertenece a css-grid */  
 
   width: 500px;
   height: 500px;
@@ -34,16 +41,33 @@ body {
 
 .item1 {
   background-color: darkcyan;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
 }
 .item2 {
   background-color: darkgoldenrod;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
 }
 .item3 {
   background-color: coral;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
 }
 .item4 {
   background-color: gold;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
 }
 .item5 {
   background-color: salmon;
+  text-align: center;
+  padding-top: 55px;
+  color: white;
 }
+
+/* hacer que los numeros esten centrados en la vertical y horizontal de los items, crecer el texto para que se note mas */
