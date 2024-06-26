@@ -41,32 +41,38 @@ body {
 
 .item1 {
   background-color: darkcyan;
-  text-align: center;
+  /* text-align: center;
   padding-top: 55px;
-  color: white;
+  color: white; */
 }
 .item2 {
   background-color: darkgoldenrod;
-  text-align: center;
+ /*  text-align: center;
   padding-top: 55px;
-  color: white;
+  color: white; */
 }
 .item3 {
   background-color: coral;
-  text-align: center;
+  /* text-align: center;
   padding-top: 55px;
-  color: white;
+  color: white; */
 }
 .item4 {
   background-color: gold;
-  text-align: center;
+  /* text-align: center;
   padding-top: 55px;
-  color: white;
+  color: white; */
 }
 .item5 {
   background-color: salmon;
-  text-align: center;
+  /* text-align: center;
   padding-top: 55px;
+  color: white; */
+}
+
+.numero {
+  text-align: center;
+  padding: 55px;
   color: white;
 }
 
