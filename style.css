@@ -11,33 +11,39 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
     "header header header"
     "main   main   sidebar"
     "footer footer footer";
 
+    gap: 24px; /* define el espacio entre filas y columnas, pero no con los bordes */
+    row-gap: 18px; /* define el espacio entre las filas */
+    column-gap: 18px; /* define el espacio entre las columnas */
+
   width: 500px;
   height: 500px;
   margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+  padding: 18px;
 
   background-color: blueviolet;
 }
 
-.header {
-  background-color: aqua;
-  grid-area: header;
+/* agregar 5 items con colores diferentes */
+
+.item1 {
+  background-color: darkcyan;
 }
-.main {
-  background-color: aquamarine;
-  grid-area: main;
+.item2 {
+  background-color: darkgoldenrod;
 }
-.sidebar {
-  background-color: beige;
-  grid-area: sidebar;
+.item3 {
+  background-color: coral;
 }
-.footer {
-  background-color: chartreuse;
-  grid-area: footer;
+.item4 {
+  background-color: gold;
+}
+.item5 {
+  background-color: salmon;
 }
